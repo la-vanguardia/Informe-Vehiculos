@@ -17,10 +17,27 @@ Simulator}
     \maketitle
 
     \begin{abstract}
-        
+        En este informe se presenta la implementación de una red Pix2Pix capaz de pasar de una imagen RGB a 
+        una imagen segmentada donde cada color indica un objeto diferente. Se comenzara desde cero obteniendo el 
+        dataset mediante el simulador CARLA para luego poder entrenar la red con una gran variedad de imagenes con 
+        diferente clima y vegetación. Finalmente se probara con imagenes reales para analizar la viavilidad de entrenar una 
+        red con un simulador y luego ingresarla en el mundo real.
     \end{abstract}
 
     \section{Introducción}
+
+    En los ultimos años, debido a la necesidad de resolver cada vez mas complejos y la posibilidad de utilizar GPU's las redes neuronales han cobrado 
+    gran importancia en nuetras vidas, y ya son parte del dia a dia, cosas tan simples como los filtros de Instagram basan 
+    su reconocimiento facial en redes neuronales. 
+
+    Las redes permiten resolver problemas que van desde la clasificación de imagenes hasta la conducción autonoma, claro esta 
+    que para esto existen diferentes arquitecturas las cuales son expecificas para determinadas tareas, como el procesamiento de imagenes (CNN, GAN, YOLO), 
+    procesamiento de texto (RNN), procesamiento de datos (NN).
+
+    La desventaja principal de estos modelos supervisados es la necesidad de una dataset muy bien estructurado y para el cual es necesario 
+    el trabajo humano, esta es la tarea mas importante y que si esta mal realizada el red no tendra un desempeño correcto.
+
+
 
     \section{Marco Teoríco}
 

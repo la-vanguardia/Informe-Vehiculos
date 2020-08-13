@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.1)  12 AUG 2020 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.1)  13 AUG 2020 12:44
 entering extended mode
 **/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex
 (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex
@@ -315,8 +315,8 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count274
 \l__pdf_internal_box=\box49
 ) (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.aux
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
 )
 \openout1 = `informe.aux'.
 
@@ -375,47 +375,49 @@ LaTeX Info: Redefining \nameref on input line 16.
 \@outlinefile=\write3
 \openout3 = `informe.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
  (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
  (/usr/local/share/miktex-texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.bbl
+) (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.bbl [1{/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map}
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 27--29
 []\OT1/ptm/m/n/8 ``Carla sen-sors re-fe-ren-ce,'' []$https : / / carla . readthedocs . io / en / latest / ref[]
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
- [1{/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map}
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+ [2
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.aux
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `informe.out' has not changed.
 (rerunfilecheck)             Checksum: 454648D5306EC1587B8C46A12AC4ED53;521.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 8318 strings out of 481226
- 127378 string characters out of 2913220
- 414892 words of memory out of 3000000
+ 8319 strings out of 481226
+ 127384 string characters out of 2913220
+ 415892 words of memory out of 3000000
  23738 multiletter control sequences out of 15000+200000
  570868 words of font info for 99 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,37p,296b,403s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,5n,37p,296b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc}</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmbi8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf (1 page, 80860 bytes).
+Output written on /home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf (2 pages, 91551 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
