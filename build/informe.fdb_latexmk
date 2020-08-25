@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/informe"] 1597333485 "build/informe.aux" "build/informe.bbl" "build/informe" 1597333485
+["bibtex build/informe"] 1598315618 "build/informe.aux" "build/informe.bbl" "build/informe" 1598315801
   "./IEEEannot.bst" 1597273228 61919 bf06423465058a2272d4ac4bdeb9eab7 ""
   "biblio.bib" 1597277713 675 583b37c568de2e29401556f7c7ee234b ""
-  "build/informe.aux" 1597333485 3062 7d001aa3498d47a4322f65204652044d "pdflatex"
+  "build/informe.aux" 1598315801 3062 75fcfb2179fc2dc304ff2b1a5e82371d "pdflatex"
   (generated)
-  "build/informe.blg"
   "build/informe.bbl"
-["pdflatex"] 1597333485 "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex" "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf" "informe" 1597333485
+  "build/informe.blg"
+["pdflatex"] 1598315801 "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex" "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf" "informe" 1598315801
   "/home/lautaro/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1596287302 10044119 c59ca949ea67205a9537b390ff08eff2 ""
   "/home/lautaro/.miktex/texmfs/data/pdftex/config/pdftex.map" 1597331776 82686 2381c3433487640bf26aa76a10db7eb2 ""
   "/home/lautaro/.miktex/texmfs/install/tex/generic/atbegshi/atbegshi.sty" 1597246443 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -32,8 +32,8 @@
   "/home/lautaro/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd" 1597245745 1007 39eda417ef5837ce5e38661cfad2cedf ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/refcount/refcount.sty" 1597246519 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/home/lautaro/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1597246491 9715 b051d5b493d9fe5f4bc251462d039e5f ""
-  "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.aux" 1597333485 3062 7d001aa3498d47a4322f65204652044d ""
-  "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex" 1597333484 6289 c1fa10a489ddaa1d11ee6b4cadbbff33 ""
+  "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.aux" 1598315801 3062 75fcfb2179fc2dc304ff2b1a5e82371d ""
+  "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex" 1598315800 6425 4dabbf4f4ad1c58101ced7c6799487a1 ""
   "/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc" 1596286893 4993 1194fb36dfcb11d9ae9802f2b00b60a3 ""
   "/usr/local/share/miktex-texmf/fonts/tfm/adobe/times/ptmb7t.tfm" 1136783054 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/local/share/miktex-texmf/fonts/tfm/adobe/times/ptmb8r.tfm" 1136783054 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -100,14 +100,14 @@
   "/usr/local/share/miktex-texmf/tex/latex/hyperref/pd1enc.def" 1596286898 14134 c11767c54bd7ecab56984ee4e4e3158c ""
   "/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdfmode.def" 1596286899 24606 ecae4e851ce9ce4554d156050e5057f9 ""
   "/usr/local/share/miktex-texmf/tex/latex/url/url.sty" 1596286935 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "build/informe.aux" 1597333485 3062 7d001aa3498d47a4322f65204652044d "pdflatex"
-  "build/informe.bbl" 1597333485 1228 c47e2f12080a99f0f4eb1a2b863a33a8 "bibtex build/informe"
-  "build/informe.out" 1597333485 521 454648d5306ec1587b8c46a12ac4ed53 "pdflatex"
-  "informe.tex" 1597333484 6289 c1fa10a489ddaa1d11ee6b4cadbbff33 ""
+  "build/informe.aux" 1598315801 3062 75fcfb2179fc2dc304ff2b1a5e82371d "pdflatex"
+  "build/informe.bbl" 1598315618 1228 c47e2f12080a99f0f4eb1a2b863a33a8 "bibtex build/informe"
+  "build/informe.out" 1598315801 521 454648d5306ec1587b8c46a12ac4ed53 "pdflatex"
+  "informe.tex" 1598315800 6425 4dabbf4f4ad1c58101ced7c6799487a1 ""
   (generated)
-  "build/informe.log"
-  "build/informe.pdf"
-  "build/informe.aux"
   "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.log"
-  "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf"
   "build/informe.out"
+  "build/informe.pdf"
+  "/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf"
+  "build/informe.aux"
+  "build/informe.log"
