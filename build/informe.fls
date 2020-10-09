@@ -200,9 +200,9 @@ INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT /usr/local/share/miktex-texmf/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/share/miktex-texmf/fonts/vf/adobe/times/ptmb7t.vf
 INPUT /usr/local/share/miktex-texmf/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT /usr/local/share/miktex-texmf/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.aux
 INPUT /home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.out
 INPUT /home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.out
