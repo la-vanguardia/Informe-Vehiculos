@@ -213,10 +213,47 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
     \end{figure}
 
     Al analizar otro imagen del dataset la cual se observa en la Fig.\ref{fig:person_image}
-    \huge{COMPLETAR!!!}
+    {COMPLETAR!!!}
 
 
     \section{Conclusiones}
+    Observando la \ref{fig:resultados2} se puede concluir que los resultados son bastante precisos si lo comparamos con la
+    imagen semántica del simulador. Si bien ciertos detalles como las paradas de colectivo, señales de transito o peatones no los 
+    reconoce o si lo hace no le asiga el color adecuado, en las regiones mas significativas como los autos, la calle o la vereda 
+    logra un desempeño bastante aceptable. Por otro lado, en la \ref{fig:resulReales} donde se analiza a la red con imágenes reales,
+    se observa que existen mas errores a la hora de segmentar. Hay regiones que no se delimitan correctamente y/o colores que no son 
+    los adecuados. Por ejemplo la mancha azul en los arbustos de la primera imágen. Las regiones mas significativas en este caso logran un 
+    resultado semi aceptable que aun asi se podrian utilizar para darle redundancia al sistema autónomo. Lo más probable es que estos 
+    errores se deban a la diferencia de iluminación y la cantidad de detalles que tiene una imagen real en comparación con las imagenes 
+    de CARLA.
+    \subsubsection{Ventajas}
+    A continuación se nombraran algunas ventajas de realizar la segmentación semántica, en particular con un simulador y una red Pix2Pix:
+    \begin{enumerate}
+        \item La ventaja principal que tiene segmentar semánticamente una imagen es la posibilidad de reconocer objetos o zonas de una forma
+        mucho mas sencilla ya sea para un usuario o para un software. Una ventaja secundaria de las imágenes semánticas es que ocupan menos espacio 
+        en memoria que su equivalente en RGB.
+        \item Al utilizar un simulador la principal ventaja recae en la posibilidad de crear un dataset con el mínimo esfuerzo humano, tiempo y costo monetario.
+        Por otro lado, a la hora de recolectar información el simulador permite una gran flexibilidad de simular situaciones externas o propias del
+        vehículo. Poder variar el clima, el mapa, la velocidad del auto de prueba o los de la ciudad, entre otras muchas características. Esto nos permite 
+        simular situaciones anómalas y asi crear un dataset mucho mas variado. 
+        \item La implementación de una red Pix2Pix para realizar la segmentación semántica tiene como principal ventaja....
+    \end{enumerate}
+    \subsubsection{Desventajas}
+    Teniendo en cuenta las ventajas mencionadas anteriormente, veremos las desventajas o inconvenientes:
+    \begin{itemize}
+        \item La principal desventaja de utilizar un simulador para esta tarea es la diferencia que se presenta entre el entorno simulado y el real.
+        Como quedó envidenciado en los resultados, esta diferencia de entornos genera errores en la imagen final. Por otro lado, se necesitarian 
+        conocimientos de programación en simuladores para generar un entornos mucho mas reales o con características particulares. 
+        \item A la hora de implementar la red neuronal las desventajas recaen en la cantidad de tiempo necesario para entrenarlas, el costo computacional 
+        y en particular ... %Poner eso de que no se puede editar mucho, como si fuera un sistema cerrado
+        Además, a la hora de entrenar a la red es necesario en la mayoria de los casos un dataset de gran tamaño y heterogéneo. 
+    \end{itemize}
+
+
+    Por último, como conclusión general cabe destacar que este tipo de prácticas son muy importantes y utilizadas en la actualidad. Las redes neuronales 
+    estan revolucionando la forma de trabajar y pensar en distos ámbitos. En consencuencia, existen grandes costos tanto monetarios como temporales que provocan el generar un
+    dataset. Debido a esto, el implementar un simulador que disminuya estos factores limitantes es una de las técnicas bien vistas al día de hoy.
+
 
     \bibliographystyle{IEEEannot}
     \bibliography{biblio}
