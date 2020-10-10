@@ -43,6 +43,9 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     \section{Marco Teoríco}
 
+    En esta sección se hara un breve marco teoríco de los conceptos basicos que se utilizaran en 
+    el proyecto.
+
     \subsection{Deep Learning}
 
     Las redes neuronal son muy utilizadas en el campo de la minería de datos, debido a 
@@ -51,18 +54,58 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
     otros casos los algoritmos no supervisados como los modelos de Q-learning o los mapas autoorganizados (SOM).
     En este proyecto se opto por un entrenamiento supervisado.
 
-    Para el modelado de la red neuronal se utilizó un modelo llamado Pix2Pix \cite{Pix2Pix}.
-    El cual pertime dada una imagen de entrada $X$ obtener una imagen de salida $Y$ haciendo uso 
-    de una arquitecrua U-Net \cite{U-Net}. 
     
-    Este modelo cuenta con 2 redes neuronales una denominada 
-    el generador en cual recive la imagen $X$ y debe ser capaz de aprender a transformala en la imagen $\hat{Y}$, la cual es 
-    una aproximación de la imagen $Y$.
-    Y por otro lado el discriminador el cual debe tomar la imagen $\hat{Y}$ para lograr reconocer las partes de 
-    esta que sean errorneas. La salida del discriminador debe ser una imagen resucida en tamaño que cuente con 
-    un unico canal de color, siendo esta imagen una cuantificacion del error de la red generativa.
 
-    Este problema desemboca en una pelea entre en generador ya que debe aprender a engañar al discriminador 
+    Para el modelado de la red neuronal se utilizó un modelo llamado Pix2Pix \cite{Pix2Pix}.
+    El cual pertime dada una imagen de entrada $X$ obtener una imagen de salida $Y$.
+
+    Este modelo consta de $2$ redes separadas, la primera se denominada el generador Fig.\ref{fig:generator}
+    el cual deberá aprender a segmentar la imagen semanticamente. Y la segunda se llama el discriminador Fig.\ref{fig:discr}
+    este se encarga de correguir al generador aprendiendo cuando una salida es "realista". 
+    Llamaremos salida "realista" a aquella imagen que cumpla el objetivo esperado, en este caso sería una imagen segmentada 
+    de coherente.
+    
+    \begin{figure}
+        \centering
+        \includegraphics[width=.4\textwidth]{Imgs/Generador.png}
+        \caption{Esquema de la red generativa.}
+        \label{fig:generator}
+    \end{figure}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=.4\textwidth]{Imgs/Discriminador.png}
+        \caption{Esquema de la red discriminativa.}
+        \label{fig:discr}
+    \end{figure}
+    
+
+
+    \subsubsection{Generador}
+
+    El generador cuenta con una arquitetura denomina U-net \cite{U-Net}, la cual tiene 
+    la cual posee una muy buena eficiencia debido a los bypass que existen entra las capas de convolución y 
+    las capas de deconvulición. Con la finalidad de comprender de forma mas sencilla se puede observar 
+    en la Fig.\ref{fig:u-net} dicha arquitectura.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=.4\textwidth]{Imgs/u-net-architecture.png}
+        \caption{Arquitectura de una U-net.}
+        \label{fig:u-net}
+    \end{figure}
+
+    El error del generador es cuantizado por la red discriminativa.
+
+    \subsubsection{Discriminador}
+
+    El discriminador posee una arquitectura mucho mas sencilla, la cual consta de $6$ capas de convolución.
+    Esto se debe a que la salida representa que tan realista es un segmento de la imagen de entrada. 
+    El error del discriminador se cuantiza mediante una entropía cruzada. Ya que 
+    se propone que siempre que le entre una imagen del generador la salida debe ser una matriz de $0$, ya que 
+    esta imagen no es del dataset, mientras que cuando la entrada sea una imagen del dataset el resultado debe ser un $1$. 
+    
+    Estodesemboca en una pelea entre en generador ya que debe aprender a engañar al discriminador 
     y el discriminador que debe lograr siempre reconocer que la imagen $\hat{Y}$ es totalmente falsa, ya que es una 
     creación de la red generativa.
  
@@ -72,49 +115,105 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
     un dominio mas acotado, para este trabajo se utilizo el domino de $[-1;1]$. De esta forma se logra 
     una mayor eficiencia computacional.
 
-    Debido a la gran variedad de dimensiones de las imagenes es recomendable hacer un resize a dimensiones mas pequeñas 
+    Debido al tamaño de las imagenes es recomendable hacer un resize a dimensiones mas pequeñas 
     para disminuir el uso de RAM cuando son cargadas en memoria y el uso de GPU al realizar las convoluciones. En 
     este caso las imagenes de entrada y de salida son redimensionadas a $256x256$.
 
+    \subsubsection{Random jitter}
+
+    El \textit{random jitter} es un proceso por en el cual se busca realizar un aumentado
+    del dataset, esto disminuye la posibilidad de experimentar \textbf{overfitting}. 
+    Este proceso cuenta de $2$ pasos:
+
+    \begin{itemize}
+        \item[Crop] Se realiza un resize a $286x286$ para luego realizar un recorte a $25x256$.
+        \item[Flip] De forma aletoria con probabilidad $0.5$ se realiza un rotación de $180^\circ$. 
+    \end{itemize}
+
+    Debido a que es utiliza en algoritmos supervisados es necesario aplicar 
+    el \textit{random jitter} tanto a la imagen de entrada como a la de salida,
+    para ello se hace un stack de las mismas como se observa en la Fig.\ref{fig:random-jitter}.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=.4\textwidth]{Imgs/stack-random-jitter.jpeg}
+        \caption{Visualización del stack previo al random jitter.}
+        \label{fig:random-jitter}
+    \end{figure}
+
+    En la Fig.\ref{fig:crop-flip} se observa el proceso de random jitter completo.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=.4\textwidth]{Imgs/in_crop_flip.png}
+        \caption{Visualización del random jitter.}
+        \label{fig:crop-flip}
+    \end{figure}
+
     \section{Desarrollo}
+
+    Se presentara de forma ordena todas las etapas del proyecto. 
+    Debido a la cantidad de imagenes utilizadas no es posible presentarlas a todas, por ello 
+    se relizaran analisís particulates para algunos casos de interes.
 
     \subsection{Obtención del dataset}
 
     Para obtener el dataset se colocaron una camara RGB y una camara de segmentación semántica
     \cite{CARLA-Sensors-Reference}, ubicadas en la misma posición. Se recolectaron los datos 
     cada 5 segundos. Las condiciones climaticas utilizadas fueron aletorias, lo que permite 
-    obtener un dataset mucho mas variado.
+    obtener un dataset mucho mas variado Fig.\ref{fig:dataset}.
 
-    Para lograr un manejo autónomo del vehiculo se utilizó el autopilot \cite{CARLA-Documentation}. 
+    \begin{figure}
+        \centering
+        %\includegraphics[width=.5\textwidth]{Imgs/tar_crop.jpg}
+        \caption{Imagenes de muestra del dataset}
+        \label{fig:dataset}
+    \end{figure}
+
+    Para lograr un manejo autónomo del vehículo se utilizó el autopilot \cite{CARLA-Documentation}. 
     Con la finalidad de aumentar la variedad de imagenes se utilizaron todos los mapas posibles y 
-    se adicionaron otros vehiculos autónomos.
+    se adicionaron otros vehiculos autónomos junto a personas. Aunque debido 
+    a limitaciones de hardware solo se pudieron ingresar 20 personas, lo cual 
+    provocó una deficiencia en la detección de personas de la red Pix2Pix. 
 
     \subsection{Entrenamiento de la red}
 
     Como fue mencinado en el marco teoríco el modelo implementado se denomina Pix2Pix \cite{Pix2Pix}.
     Se utilizó como entrada la imagen de la camara RGB y la salida será una imagen segmentada, para ello se utilizó
-    el dataset que contava con casi 8000 imagenes. 
+    el dataset obtenido con el simulador de \textbf{CARLA} el cual posee 8000 imagenes. 
 
     \subsubsection{Tratamiento de las imagenes}
 
     Para evitar problemas en el entrenamiento de la red es muy usual llevar los valores de cada canal al 
-    intervalor $[-1;1]$, esto evita problemas de continuidad en red.
-
-    Otro paso previo es agrandar la imagen a un tamaño mayor y luego realizar un recorte aletorio, esto es 
-    con la finalidad de realizar un incremento virtual del dataset. Este metodo permite evitar el 
-    overfitting. Adicionalmente es posible realizar un flip de la imagen aletoriamete.
+    intervalor $[-1;1]$, esto evita problemas de continuidad en red. Luego 
+    se procede a aplicar un \textit{random jitter}.
 
     El dataset fue dividido en 2 partes una utilizada para el entrenamiento, aproximadamente el $80 \% $ de las imagenes y 
-    otra parte para el testing de la red utilizando el $20 \%$ restante.
+    otra parte para el testing de la red utilizando el $20 \%$ restante, siguiendo el principio de Pareto.
 
-    Luego de \textbf{400} iteraciones se presentan los resultados en la fig.\ref{fig:resultados}
+    \subsubsection{Entrenamiento}
+
+    Para realizar el entremiento se utlizó el dataset de testin, aproximadamente 6400 imagenes, 
+    y se realizon 400 iteración a la red para lograr un mejor desenpeñó. 
+    
+    En la Fig.\ref{fig:resultados}
+    se muestra una comparación para $1$ imagen del dataset de testing luego de la primera iteración 
+    y al finalizar el entrenamiento.
+    Puede observarse que existieron grandes mejoras sobre todo en la zona de la palmera
+    donde al finalizar el entrenamiento es posible observar los detalles de la misma.
+    Aunque cabe destacar que debido a la poca cantidad de señales de trafico en el dataset
+    se observa que si bien reconoce la estructura del semaforo no es capaz de utilizar el color 
+    adecuado.
 
     \begin{figure}[htb]
         \centering
-        \caption{Imagenes obtenidas luego del entrenamiento}
+        \includegraphics[width=.4\textwidth]{Imgs/grapics_results.jpg}    
+        \caption{Imagen del dataset de testing.}
         \label{fig:resultados}
     \end{figure}
 
+    Al analizar otro imagen del dataset la cual se observa en la Fig.\ref{fig:person_image}
+    \huge{COMPLETAR!!!}
 
 
     \section{Conclusiones}

@@ -1,10 +1,14 @@
 \BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
 \BOOKMARK [1][-]{section.2}{Marco Teor\355co}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Deep Learning}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Preporcesado de los datos}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Desarrollo}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Obtenci\363n del dataset}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Entrenamiento de la red}{section.3}% 7
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Tratamiento de las imagenes}{subsection.3.2}% 8
-\BOOKMARK [1][-]{section.4}{Conclusiones}{}% 9
-\BOOKMARK [1][-]{section*.1}{Referencias}{}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Generador}{subsection.2.1}% 4
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Discriminador}{subsection.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Preporcesado de los datos}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Random jitter}{subsection.2.2}% 7
+\BOOKMARK [1][-]{section.3}{Desarrollo}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Obtenci\363n del dataset}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Entrenamiento de la red}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Tratamiento de las imagenes}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Entrenamiento}{subsection.3.2}% 12
+\BOOKMARK [1][-]{section.4}{Conclusiones}{}% 13
+\BOOKMARK [1][-]{section*.1}{Referencias}{}% 14
