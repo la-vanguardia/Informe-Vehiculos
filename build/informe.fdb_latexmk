@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex build/informe"] 1602353548 "build/informe.aux" "build/informe.bbl" "build/informe" 1602353552
+["bibtex build/informe"] 1602354390 "build/informe.aux" "build/informe.bbl" "build/informe" 1602354396
   "./IEEEannot.bst" 1602168777 64545 bf06423465058a2272d4ac4bdeb9eab7 ""
   "biblio.bib" 1602168777 701 583b37c568de2e29401556f7c7ee234b ""
-  "build/informe.aux" 1602353551 4683 cea54ddf10da42c9a465478a698791b8 "pdflatex"
+  "build/informe.aux" 1602354395 5061 b7d2acdea0878ae207c0297ae1dbee56 "pdflatex"
   (generated)
   "build/informe.blg"
   "build/informe.bbl"
-["pdflatex"] 1602353548 "d:/Isaias/Documents/Git/Informe-Vehiculos/informe.tex" "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.pdf" "informe" 1602353552
+["pdflatex"] 1602354390 "d:/Isaias/Documents/Git/Informe-Vehiculos/informe.tex" "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.pdf" "informe" 1602354396
   "C:/Users/Isaia/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1585613136 9852523 e4c826383ab404c31b84ad513c4e82a8 ""
   "C:/Users/Isaia/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1600808773 92278 c74bf2452ff3993e008ebfd9d9f94dc8 ""
   "C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -94,16 +94,16 @@
   "Imgs/in_crop_flip.png" 1602347999 681914 7faaca97375e5b3e3e465279efd15c6c ""
   "Imgs/stack-random-jitter.jpeg" 1602347999 21414 622da9afc3745460ce8ba34eea8ab1d0 ""
   "Imgs/u-net-architecture.png" 1602347999 103270 fcfd65b2069a81d0e5aef6aa69f2150d ""
-  "build/informe.aux" 1602353551 4683 cea54ddf10da42c9a465478a698791b8 "pdflatex"
-  "build/informe.bbl" 1602353548 1268 c47e2f12080a99f0f4eb1a2b863a33a8 "bibtex build/informe"
-  "build/informe.out" 1602353551 1035 f672d2c6b129b9ad2feca9f2823bd26f "pdflatex"
-  "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.aux" 1602353551 4683 cea54ddf10da42c9a465478a698791b8 ""
-  "d:/Isaias/Documents/Git/Informe-Vehiculos/informe.tex" 1602353543 14467 fa0e65c6a7e010a738287358e240cc3a ""
-  "informe.tex" 1602353543 14467 fa0e65c6a7e010a738287358e240cc3a ""
+  "build/informe.aux" 1602354395 5061 b7d2acdea0878ae207c0297ae1dbee56 "pdflatex"
+  "build/informe.bbl" 1602354390 1268 c47e2f12080a99f0f4eb1a2b863a33a8 "bibtex build/informe"
+  "build/informe.out" 1602354395 1224 2cc89365a8fefab398a42cb994fd14bc "pdflatex"
+  "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.aux" 1602354395 5061 b7d2acdea0878ae207c0297ae1dbee56 ""
+  "d:/Isaias/Documents/Git/Informe-Vehiculos/informe.tex" 1602354384 14763 9db800cf088a7a2c1b56e88e72f13ccd ""
+  "informe.tex" 1602354384 14763 9db800cf088a7a2c1b56e88e72f13ccd ""
   (generated)
+  "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.log"
   "build/informe.out"
   "build/informe.log"
-  "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.pdf"
-  "build/informe.pdf"
   "build/informe.aux"
-  "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.log"
+  "build/informe.pdf"
+  "d:/Isaias/Documents/Git/Informe-Vehiculos/build/informe.pdf"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.30)  10 OCT 2020 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.30)  10 OCT 2020 15:26
 entering extended mode
 **d:/Isaias/Documents/Git/Informe-Vehiculos/informe.tex
 (d:/Isaias/Documents/Git/Informe-Vehiculos/informe.tex
@@ -449,17 +449,17 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
  ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Imgs/Generador.png, id=70, 883.3pt x 281.05pt>
+<Imgs/Generador.png, id=82, 883.3pt x 281.05pt>
 File: Imgs/Generador.png Graphic file (type png)
 <use Imgs/Generador.png>
 Package pdftex.def Info: Imgs/Generador.png  used on input line 70.
 (pdftex.def)             Requested size: 206.39685pt x 65.66936pt.
-<Imgs/Discriminador.png, id=72, 1202.4925pt x 732.7375pt>
+<Imgs/Discriminador.png, id=84, 1202.4925pt x 732.7375pt>
 File: Imgs/Discriminador.png Graphic file (type png)
 <use Imgs/Discriminador.png>
 Package pdftex.def Info: Imgs/Discriminador.png  used on input line 77.
 (pdftex.def)             Requested size: 206.39685pt x 125.76006pt.
-<Imgs/u-net-architecture.png, id=75, 1560.83125pt x 1039.885pt>
+<Imgs/u-net-architecture.png, id=87, 1560.83125pt x 1039.885pt>
 File: Imgs/u-net-architecture.png Graphic file (type png)
 <use Imgs/u-net-architecture.png>
 Package pdftex.def Info: Imgs/u-net-architecture.png  used on input line 93.
@@ -472,12 +472,12 @@ Package pdftex.def Info: Imgs/u-net-architecture.png  used on input line 93.
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 (Font)              using `OT1/ptm/bx/n' instead on input line 125.
 
-<Imgs/stack-random-jitter.jpeg, id=95, 558.085pt x 237.88875pt>
+<Imgs/stack-random-jitter.jpeg, id=107, 558.085pt x 237.88875pt>
 File: Imgs/stack-random-jitter.jpeg Graphic file (type jpg)
 <use Imgs/stack-random-jitter.jpeg>
 Package pdftex.def Info: Imgs/stack-random-jitter.jpeg  used on input line 139.
 (pdftex.def)             Requested size: 206.39685pt x 87.97752pt.
-<Imgs/in_crop_flip.png, id=97, 2597.705pt x 715.67375pt>
+<Imgs/in_crop_flip.png, id=109, 2597.705pt x 715.67375pt>
 File: Imgs/in_crop_flip.png Graphic file (type png)
 <use Imgs/in_crop_flip.png>
 Package pdftex.def Info: Imgs/in_crop_flip.png  used on input line 148.
@@ -487,7 +487,7 @@ LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 (Font)              using `OT1/ptm/bx/n' instead on input line 183.
 
 [2 <./Imgs/u-net-architecture.png> <./Imgs/stack-random-jitter.jpeg> <./Imgs/in_crop_flip.png>]
-<Imgs/grapics_results.jpg, id=116, 1284.8pt x 760.8425pt>
+<Imgs/grapics_results.jpg, id=128, 1284.8pt x 760.8425pt>
 File: Imgs/grapics_results.jpg Graphic file (type jpg)
 <use Imgs/grapics_results.jpg>
 Package pdftex.def Info: Imgs/grapics_results.jpg  used on input line 210.
@@ -502,21 +502,21 @@ LaTeX Warning: Reference `fig:person_image' on page 3 undefined on input line 21
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 220.
+(Font)              using `OT1/ptm/bx/n' instead on input line 232.
 
 
-LaTeX Warning: Reference `fig:resultados2' on page 3 undefined on input line 220.
+LaTeX Warning: Reference `fig:resultados2' on page 3 undefined on input line 232.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 223.
+(Font)              using `OT1/ptm/bx/n' instead on input line 235.
 
 
-LaTeX Warning: Reference `fig:resulReales' on page 3 undefined on input line 223.
+LaTeX Warning: Reference `fig:resulReales' on page 3 undefined on input line 235.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 230.
+(hyperref)                than one, level fixed on input line 242.
 
 (d:/Isaias\Documents\Git\Informe-Vehiculos\build\informe.bbl
 Underfull \hbox (badness 1668) in paragraph at lines 22--24
@@ -529,17 +529,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
  [3 <./Imgs/grapics_results.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
  (d:/Isaias\Documents\Git\Informe-Vehiculos\build\informe.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 272.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 272.
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: F672D2C6B129B9AD2FECA9F2823BD26F;1035.
+(rerunfilecheck)             Checksum: 2CC89365A8FEFAB398A42CB994FD14BC;1224.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -547,20 +547,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
  ) 
 Here is how much of TeX's memory you used:
- 8256 strings out of 481556
- 128863 string characters out of 2913869
- 403930 words of memory out of 3000000
- 23329 multiletter control sequences out of 15000+200000
+ 8262 strings out of 481556
+ 128943 string characters out of 2913869
+ 404930 words of memory out of 3000000
+ 23332 multiletter control sequences out of 15000+200000
  538931 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,5n,35p,272b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on d:/Isaias\Documents\Git\Informe-Vehiculos\build\informe.pdf (3 pages, 1212578 bytes).
+Output written on d:/Isaias\Documents\Git\Informe-Vehiculos\build\informe.pdf (3 pages, 1214131 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 
