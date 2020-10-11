@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{cite}
 \usepackage{hyperref}
+\usepackage{float}
 
 \title{Procesamiento de imágenes utilizando Deep learning y Carla 
 Simulator}
@@ -37,7 +38,11 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     \section{Introducción}
 
-    En los ultimos años, debido a la necesidad de resolver cada vez mas complejos y la posibilidad de utilizar GPU's las redes neuronales han cobrado 
+    Con la intención de brindarle inteligencia a un automovil, la primer cuestión es cómo éste se comunica con el mundo y cómo lo interpreta.
+    Con el avance de la tecnología las cámaras toman preponderencia como sensores y combinando esta gran fuente de información (la fotografía) con un 
+    algoritmo de segmentación las posibilidades de detección y decisión del vehículo parten de una buena base. 
+
+    ¿Pero cómo generar esta segmentación de forma automática y confiable? En los ultimos años, debido a la necesidad de resolver cada vez mas complejos y la posibilidad de utilizar GPU's las redes neuronales han cobrado 
     gran importancia en nuetras vidas, y ya son parte del dia a dia, cosas tan simples como los filtros de Instagram basan 
     su reconocimiento facial en redes neuronales. 
 
@@ -47,6 +52,11 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     La desventaja principal de estos modelos supervisados es la necesidad de una dataset muy bien estructurado y para el cual es necesario 
     el trabajo humano, esta es la tarea mas importante y que si esta mal realizada el red no tendra un desempeño correcto.
+
+    Aquí es donde nace el uso de simuladores. En el paper \textit{Driving to Safety} de las autoras \textit{Nidhi Kalra} y \textit{Susan M. Paddock}, se 
+    plantean la siguiente cuestión ``los vehículos autónomos deberán ser conducidos cientos de millones de millas y, a veces, cientos de miles de millones de millas
+    para hacer afirmaciones estadísticamente confiables sobre la seguridad''. Esto conlleva obviamente muchos gastos y riesgos, lo que un simulador reduce de gran 
+    manera, no solo para la creación del dataset si no tambien para el posterior testeo de la conducción autonoma. 
 
 
 
@@ -255,17 +265,27 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
     {COMPLETAR!!!}
 
     \subsection{Imágenes reales}
-
-
-
+    En la siguientes imágenes se observa el desempeño de la red al utilizar imágenes reales de un dataset público. 
+    \begin{figure}[htb]
+        \centering
+        \includegraphics[width=.25\textwidth]{Imgs/PalmeraRGBSEM.png}    
+        \caption{Primer prueba con imagen real.}
+        \label{fig:real-results}
+    \end{figure}
+    \begin{figure}[htb]
+        \centering
+        \includegraphics[width=.25\textwidth]{Imgs/SemaforoRGBSEM.png}    
+        \caption{Segunda prueba con imagen real.}
+        \label{fig:real-results2}
+    \end{figure}
 
     \section{Conclusiones}
     
-    Al observar la Fig.\ref{fig:resultados2} se puede concluir que los resultados son precisos, al compararlos con la
+    Al observar la Fig.\ref{fig:resultados2} y el video asociado, se puede concluir que los resultados son precisos, al compararlos con la
     imagen semántica obtenido del simulador. Existen ciertos detalles como las paradas de colectivo, señales de tránsito o peatones que no los 
     reconoce y, si lo hace no le asigna el color adecuado. 
     Sin embargo en las regiones mas significativas como los autos, calles o veredas
-    logra un desempeño aceptable. Por otro lado, en la Fig.\ref{fig:real-results} donde se analiza a la red con imágenes reales,
+    logra un desempeño aceptable. Por otro lado, en las Fig.\ref{fig:real-results} y Fig.\ref{fig:real-results2} donde se analiza a la red con imágenes reales,
     se observa que existen más errores a la hora de segmentar. Hay regiones que no se delimitan correctamente y/o colores que no son 
     los correctos. Por ejemplo la mancha azul en los arbustos de la primera imagen. Las regiones mas significativas en este caso logran un 
     resultado parcialmente aceptable que aún así se podrían utilizar para darle redundancia al sistema. Lo más probable es que estos 
