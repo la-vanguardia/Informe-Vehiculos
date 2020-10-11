@@ -1,19 +1,19 @@
 \BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
-\BOOKMARK [1][-]{section.2}{Marco Teor\355co}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Deep Learning}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{Generador}{subsection.2.1}% 4
-\BOOKMARK [3][-]{subsubsection.2.1.2}{Discriminador}{subsection.2.1}% 5
-\BOOKMARK [2][-]{subsection.2.2}{Preporcesado de los datos}{section.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.2.1}{Random jitter}{subsection.2.2}% 7
-\BOOKMARK [1][-]{section.3}{Desarrollo}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{Obtenci\363n del dataset}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Entrenamiento de la red}{section.3}% 10
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Tratamiento de las imagenes}{subsection.3.2}% 11
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Entrenamiento}{subsection.3.2}% 12
-\BOOKMARK [1][-]{section.4}{Resultados}{}% 13
-\BOOKMARK [2][-]{subsection.4.1}{Im\341genes del simulador}{section.4}% 14
-\BOOKMARK [2][-]{subsection.4.2}{Im\341genes reales}{section.4}% 15
+\BOOKMARK [1][-]{section.2}{Materias y metodos}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{CARLA}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Deep Learning}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Generador}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Discriminador}{subsection.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Preporcesado de los datos}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Random jitter}{subsection.2.3}% 8
+\BOOKMARK [1][-]{section.3}{Propuesta}{}% 9
+\BOOKMARK [1][-]{section.4}{Pruebas y resultados}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Obtenci\363n del dataset}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Entrenamiento de la red}{section.4}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Tratamiento de las imagenes}{subsection.4.2}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Entrenamiento}{subsection.4.2}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Im\341genes reales}{section.4}% 15
 \BOOKMARK [1][-]{section.5}{Conclusiones}{}% 16
-\BOOKMARK [2][-]{subsubsection.5.0.1}{Ventajas}{section.5}% 17
-\BOOKMARK [3][-]{subsubsection.5.0.2}{Desventajas}{subsubsection.5.0.1}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Ventajas}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.2}{Desventajas}{section.5}% 18
 \BOOKMARK [1][-]{section*.1}{Referencias}{}% 19

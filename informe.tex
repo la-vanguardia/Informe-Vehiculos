@@ -15,6 +15,12 @@ Gatica, Isais \\ \small{email: isaiasgatica1@gmail.com} \\ \and
 Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 \date{}
 
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
 \begin{document}
     \maketitle
 
@@ -25,6 +31,9 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
         diferente clima y vegetación. Finalmente se probara con imagenes reales para analizar la viavilidad de entrenar una 
         red con un simulador y luego ingresarla en el mundo real.
     \end{abstract}
+
+    \keywords{Pix2Pix, CNN, GAN, RNN, NN, YOLO, SOM, CARLA}
+
 
     \section{Introducción}
 
@@ -41,10 +50,19 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
 
 
-    \section{Marco Teoríco}
+    \section{Materias y metodos}
 
-    En esta sección se hara un breve marco teoríco de los conceptos basicos que se utilizaran en 
-    el proyecto.
+    En esta sección se detallan los recientes avances en los campos de interes.
+
+
+    \subsection{CARLA}
+
+    CARLA \cite{CARLA-Simulator} es un simulador de conducción el cual posee una API para Python lo que 
+    permite de forma sencilla obtener datos del entorno. Esto permite una gran simpleza 
+    a la hora de crear dataset o probar modelos de AI.
+    
+    CARLA cuenta con una gran variedad de sensores como GPS, LiDAR, camaras RGB, camaras de segmentación semantica, etc.
+    También posee un ambiente muy variado, permiendo variaciones en la neblina, la hora del día e incluso el clima.
 
     \subsection{Deep Learning}
 
@@ -150,7 +168,27 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
         \label{fig:crop-flip}
     \end{figure}
 
-    \section{Desarrollo}
+    \section{Propuesta}
+
+    Se propone realizar una red neuronal utilizando la arquitectura Pix2Pix que 
+    aprenda a segmentar semanticamente una imagen. Adicionalmente el 
+    dataset utilizado será obtenido mediante el CARLA permitiendo de esta forma 
+    pasar por todo el trayecto del diseño de una red que resuelve un nuevo problema. 
+    Este proceso consta de 
+
+    \begin{enumerate}
+        \item Definir la arquitectura a utilizar.
+        \item Crear un dataset util para solucionar el problema.
+        \item Entrenar la red.
+        \item Testear el rendimiento de la misma.
+        \item Realizar mejoras a la arquitectura para obtener alguna de las siguientes ventajas: 
+            \subitem Mayor velocidad de procesado.
+            \subitem Mejor rendimiento. 
+            \subitem Eliminar el overfitting o underfitting si existiera.
+        \item Repetir los pasos anteriores hasta lograr un resultado satisfactorio.
+    \end{enumerate}
+
+    \section{Pruebas y resultados}
 
     Se presentara de forma ordena todas las etapas del proyecto. 
     Debido a la cantidad de imagenes utilizadas no es posible presentarlas a todas, por ello 
@@ -160,8 +198,9 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     Para obtener el dataset se colocaron una camara RGB y una camara de segmentación semántica
     \cite{CARLA-Sensors-Reference}, ubicadas en la misma posición. Se recolectaron los datos 
-    cada 5 segundos. Las condiciones climaticas utilizadas fueron aletorias, lo que permite 
-    obtener un dataset mucho mas variado Fig.\ref{fig:dataset}.
+    cada 5 segundos. Las condiciones climaticas utilizadas fueron aletorias, lo que se logra
+    obtener un dataset mucho mas variado, una representación de este puede observase en 
+    Fig.\ref{fig:dataset}.
 
     \begin{figure}
         \centering
@@ -194,9 +233,9 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
     \subsubsection{Entrenamiento}
 
     Para realizar el entremiento se utlizó el dataset de testin, aproximadamente 6400 imagenes, 
-    y se realizon 400 iteración a la red para lograr un mejor desenpeñó. 
+    y se realizon 400 iteraciones a la red para lograr un mejor desenpeñó. 
     
-    En la Fig.\ref{fig:resultados}
+    En la Fig.\ref{fig:results}
     se muestra una comparación para $1$ imagen del dataset de testing luego de la primera iteración 
     y al finalizar el entrenamiento.
     Puede observarse que existieron grandes mejoras sobre todo en la zona de la palmera
@@ -207,21 +246,13 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     \begin{figure}[htb]
         \centering
-        \includegraphics[width=.4\textwidth]{Imgs/grapics_results.jpg}    
+        \includegraphics[width=.25\textwidth]{Imgs/results.jpeg}    
         \caption{Imagen del dataset de testing.}
-        \label{fig:resultados}
+        \label{fig:results}
     \end{figure}
 
     Al analizar otro imagen del dataset la cual se observa en la Fig.\ref{fig:person_image}
     {COMPLETAR!!!}
-
-
-
-    \section{Resultados}
-    En esta sección se veran los resultados obtenidos tanto para imágenes del simulador como para imágenes reales. Además se dejará un 
-    link de un video demostrativo.
-    \subsection{Imágenes del simulador}
-
 
     \subsection{Imágenes reales}
 
@@ -229,42 +260,52 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
 
     \section{Conclusiones}
-    Observando la \ref{fig:resultados2} se puede concluir que los resultados son bastante precisos si lo comparamos con la
-    imagen semántica del simulador. Si bien ciertos detalles como las paradas de colectivo, señales de transito o peatones no los 
-    reconoce o si lo hace no le asiga el color adecuado, en las regiones mas significativas como los autos, la calle o la vereda 
-    logra un desempeño bastante aceptable. Por otro lado, en la \ref{fig:resulReales} donde se analiza a la red con imágenes reales,
-    se observa que existen mas errores a la hora de segmentar. Hay regiones que no se delimitan correctamente y/o colores que no son 
-    los adecuados. Por ejemplo la mancha azul en los arbustos de la primera imágen. Las regiones mas significativas en este caso logran un 
-    resultado semi aceptable que aun asi se podrian utilizar para darle redundancia al sistema autónomo. Lo más probable es que estos 
-    errores se deban a la diferencia de iluminación y la cantidad de detalles que tiene una imagen real en comparación con las imagenes 
-    de CARLA.
-    \subsubsection{Ventajas}
-    A continuación se nombraran algunas ventajas de realizar la segmentación semántica, en particular con un simulador y una red Pix2Pix:
+    
+    Al observar la Fig.\ref{fig:resultados2} se puede concluir que los resultados son precisos, al compararlos con la
+    imagen semántica obtenido del simulador. Existen ciertos detalles como las paradas de colectivo, señales de tránsito o peatones que no los 
+    reconoce y, si lo hace no le asigna el color adecuado. 
+    Sin embargo en las regiones mas significativas como los autos, calles o veredas
+    logra un desempeño aceptable. Por otro lado, en la Fig.\ref{fig:real-results} donde se analiza a la red con imágenes reales,
+    se observa que existen más errores a la hora de segmentar. Hay regiones que no se delimitan correctamente y/o colores que no son 
+    los correctos. Por ejemplo la mancha azul en los arbustos de la primera imagen. Las regiones mas significativas en este caso logran un 
+    resultado parcialmente aceptable que aún así se podrían utilizar para darle redundancia al sistema. Lo más probable es que estos 
+    errores se deban a la diferencia de iluminación y cantidad de detalles que tiene una imagen real en comparación con las imágenes 
+    del simulador.
+
+    \subsection{Ventajas}
+
+    A continuación se nombrarán algunas ventajas de realizar la segmentación semántica, en particular con un simulador y una red Pix2Pix. 
+    Ordenadas según importancia decreciente:
+    
     \begin{enumerate}
-        \item La ventaja principal que tiene segmentar semánticamente una imagen es la posibilidad de reconocer objetos o zonas de una forma
-        mucho mas sencilla ya sea para un usuario o para un software. Una ventaja secundaria de las imágenes semánticas es que ocupan menos espacio 
-        en memoria que su equivalente en RGB.
+        \item Posibilidad de reconocer objetos o zonas de una forma
+        mucho mas sencilla. 
         \item Al utilizar un simulador la principal ventaja recae en la posibilidad de crear un dataset con el mínimo esfuerzo humano, tiempo y costo monetario.
-        Por otro lado, a la hora de recolectar información el simulador permite una gran flexibilidad de simular situaciones externas o propias del
-        vehículo. Poder variar el clima, el mapa, la velocidad del auto de prueba o los de la ciudad, entre otras muchas características. Esto nos permite 
-        simular situaciones anómalas y asi crear un dataset mucho mas variado. 
-        \item La implementación de una red Pix2Pix para realizar la segmentación semántica tiene como principal ventaja....
+        \item Gran flexibilidad de simular situaciones externas o propias del
+        vehículo mientras se recolectan datos. Permitiendo simular situaciones anómalas.
+        \item Al utilizar redes neuronales no existe una etapa de diseño de descriptores, ya que estos son obtenidos por la red.
+        \item Reducción del tiempo de procesado de información.
+        \item Las imágenes semánticas ocupan menos espacio en memoria que su equivalente en RGB.
     \end{enumerate}
-    \subsubsection{Desventajas}
-    Teniendo en cuenta las ventajas mencionadas anteriormente, veremos las desventajas o inconvenientes:
-    \begin{itemize}
-        \item La principal desventaja de utilizar un simulador para esta tarea es la diferencia que se presenta entre el entorno simulado y el real.
-        Como quedó envidenciado en los resultados, esta diferencia de entornos genera errores en la imagen final. Por otro lado, se necesitarian 
-        conocimientos de programación en simuladores para generar un entornos mucho mas reales o con características particulares. 
+    
+    \subsection{Desventajas}
+    
+    Por otro lado al analizar las desventajas de este modelo con el mismo criterio obtenemos:
+    
+    \begin{enumerate}
+        \item Existe una diferencia significativa entre el entorno simulado y el real.
+        \item Limitaciones de las computadoras actuales para realizar procesos de simulación y train en forma simultanea.
         \item A la hora de implementar la red neuronal las desventajas recaen en la cantidad de tiempo necesario para entrenarlas, el costo computacional 
         y en particular ... %Poner eso de que no se puede editar mucho, como si fuera un sistema cerrado
-        Además, a la hora de entrenar a la red es necesario en la mayoria de los casos un dataset de gran tamaño y heterogéneo. 
-    \end{itemize}
+        \item Para problemas de alta complejidad y modelos de gran densidad es necesario datasets de gran tamaño.
+        \item Tiempo de generado del dataset.
+    \end{enumerate}
 
 
     Por último, como conclusión general cabe destacar que este tipo de prácticas son muy importantes y utilizadas en la actualidad. Las redes neuronales 
-    estan revolucionando la forma de trabajar y pensar en distos ámbitos. En consencuencia, existen grandes costos tanto monetarios como temporales que provocan el generar un
-    dataset. Debido a esto, el implementar un simulador que disminuya estos factores limitantes es una de las técnicas bien vistas al día de hoy.
+    están revolucionando la forma de trabajar y pensar en distintos ámbitos. Debido a esto nace la necesitades de minar datos, 
+    su coste es un gran trabajo humano durante largos periodos de tiempo. Esto causa un gran gasto monetario en las empresas que se 
+    dedican a este rubro. Por ello es importante el avance de los simuladores para lograr obtener datasets más económicos.
 
 
     \bibliographystyle{IEEEannot}
