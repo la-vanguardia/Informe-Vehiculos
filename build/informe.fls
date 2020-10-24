@@ -229,8 +229,11 @@ INPUT ./Imgs/results.jpeg
 INPUT ./Imgs/results.jpeg
 INPUT ./Imgs/results.jpeg
 INPUT ./Imgs/results.jpeg
-INPUT Imgs/results.jpeg
-INPUT ./Imgs/results.jpeg
+INPUT Imgs/results-2.png
+INPUT ./Imgs/results-2.png
+INPUT ./Imgs/results-2.png
+INPUT ./Imgs/results-2.png
+INPUT ./Imgs/results-2.png
 INPUT Imgs/PalmeraRGBSEM.png
 INPUT ./Imgs/PalmeraRGBSEM.png
 INPUT ./Imgs/PalmeraRGBSEM.png

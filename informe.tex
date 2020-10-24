@@ -252,8 +252,9 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     \subsubsection{Entrenamiento}
 
-    Para realizar el entremiento se utlizó el dataset de testin, aproximadamente 6400 imagenes, 
-    y se realizon 400 iteraciones a la red para lograr un mejor desenpeñó. 
+    Para realizar el entremiento se utlizó el dataset de testing, aproximadamente 6400 imagenes, 
+    y se realizon 400 iteraciones a la red para lograr un mejor desenpeñó. A continuación se muestran 2 
+    casos de interes debido a la gran densidad del dataset de testing.
     
     En la Fig.\ref{fig:results}
     se muestra una comparación para $1$ imagen del dataset de testing luego de la primera iteración 
@@ -277,12 +278,15 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     \begin{figure}
         \centering
-        \includegraphics[width=.25\textwidth]{Imgs/results.jpeg}
+        \includegraphics[width=.25\textwidth]{Imgs/results-2.png}
         \caption{Imagen del dataset de testing con persona.}
         \label{fig:person_image}
     \end{figure}
 
     \subsection{Imágenes reales}
+
+    En este apartado se muestran 2 imagenes de interes para mostrar el comportamiento del modelo entrenado en situaciones reales.
+
     En la Fig.\ref{fig:real-results} se observa como para un cielo despejado la red es capaz de detectar de forma muy eficiente los limites. 
     Al analizar la palmera se observa un resultado muy similar. Pero para zonas con mayor detalle se observa una deficiencia de la red, tal 
     como sucede con los autos o los arbustos del costado izquierdo. Por otro lado en la Fig.\ref{fig:real-results2} como el cielo esta nublado 
@@ -291,30 +295,32 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
 
     \begin{figure}[htb]
         \centering
-        \includegraphics[width=.25\textwidth]{Imgs/PalmeraRGBSEM.png}    
+        \includegraphics[width=.4\textwidth]{Imgs/PalmeraRGBSEM.png}    
         \caption{Imagen real y su respectiva segmentación semantica por la red luego del entrenamiento.}
         \label{fig:real-results}
     \end{figure}
     \begin{figure}[htb]
         \centering
-        \includegraphics[width=.25\textwidth]{Imgs/SemaforoRGBSEM.png}    
+        \includegraphics[width=.4\textwidth]{Imgs/SemaforoRGBSEM.png}    
         \caption{Imagen real junto a su representación segmentada por la red.}
         \label{fig:real-results2}
     \end{figure}
 
     \section{Conclusiones}
     
-    %% Cambiar!!!
-    Al observar la Fig.\ref{fig:resultados2} y el video asociado, se puede concluir que los resultados son precisos, al compararlos con la
-    imagen semántica obtenido del simulador. Existen ciertos detalles como las paradas de colectivo, señales de tránsito o peatones que no los 
-    reconoce y, si lo hace no le asigna el color adecuado. 
-    Sin embargo en las regiones mas significativas como los autos, calles o veredas
-    logra un desempeño aceptable. Por otro lado, en las Fig.\ref{fig:real-results} y Fig.\ref{fig:real-results2} donde se analiza a la red con imágenes reales,
-    se observa que existen más errores a la hora de segmentar. Hay regiones que no se delimitan correctamente y/o colores que no son 
-    los correctos. Por ejemplo la mancha azul en los arbustos de la primera imagen. Las regiones mas significativas en este caso logran un 
-    resultado parcialmente aceptable que aún así se podrían utilizar para darle redundancia al sistema. Lo más probable es que estos 
-    errores se deban a la diferencia de iluminación y cantidad de detalles que tiene una imagen real en comparación con las imágenes 
-    del simulador.
+    Al analizar los resultados del modelo con las imagenes que se obtienen desde el simulador se observa un desempeño correcto. Aun que 
+    existen ciertos detalles tales como: personas, señales de transito y paradas de colectivo. Estos problemas se adjudican a la poca 
+    densidad de estos en el dataset de training. En el caso de las personas existe una limitación por parte del simulador ya que no 
+    deja ingresar mas de $20$. Los otros problemas son asociados a los mapas y la cantidad de señales de trafico que estos presentan, una 
+    posible solución sería aumentar el tamaño del dataset o utilizar una red especializada en detección de señales de trafico.
+
+    Para las imagenes reales si bien el desenpeñó de la red disminuye y se observan otros problemas como las nubes los resultados generales 
+    dan esperanza sobre futuras redes entrenadas en simuladores para luego pasarlas a un entorno real. Un gran problema y que aun no 
+    ha sido solucionado es la iluminación, debido a su alta complejidad. Estas diferencias entre la realidad y el simulador desemboca 
+    en regiones que no son delimitadas de forma correcta y colores erroneos. Aunque las regiones de mayor interes son detectadas como 
+    la calle, la vereda y los autos, pero no bien delimitadas. Esto nos permitiria realizar una aproximación de donde se ubican los puntos 
+    de interes como otros vehiculos.
+
 
     \subsection{Ventajas}
 
@@ -339,11 +345,11 @@ Saez, Lautaro Andres \\ \small{email: lautaroandressaez@gmail.com } }
     \begin{enumerate}
         \item Existe una diferencia significativa entre el entorno simulado y el real.
         \item Limitaciones de las computadoras actuales para realizar procesos de simulación y train en forma simultanea.
-        \item A la hora de implementar la red neuronal las desventajas recaen en la cantidad de tiempo necesario para entrenarlas, el costo computacional 
-        y en particular ... %Poner eso de que no se puede editar mucho, como si fuera un sistema cerrado
+        \item Alto costo computacional.
         \item Para problemas de alta complejidad y modelos de gran densidad es necesario datasets de gran tamaño.
         \item Tiempo de generado del dataset.
     \end{enumerate}
+
 
     Finalmente, estas practicas son de suma importancia en la actualidad debido a que permiten entrenar modelos por costos mucho menores. 
     Adicionalmente se debido a la revolución de las redes neuronales a partir del 2009 y el aumento en la demanda de modelos para resolver todo 

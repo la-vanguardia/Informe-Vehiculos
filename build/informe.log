@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.8.1)  23 OCT 2020 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.8.1)  24 OCT 2020 00:57
 entering extended mode
 **/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex
 (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/informe.tex
@@ -398,11 +398,11 @@ File: Imgs/Generador.png Graphic file (type png)
 <use Imgs/Generador.png>
 Package pdftex.def Info: Imgs/Generador.png  used on input line 108.
 (pdftex.def)             Requested size: 206.39685pt x 65.66936pt.
-<Imgs/Discriminador.png, id=85, 1202.4925pt x 732.7375pt>
+<Imgs/Discriminador.png, id=85, 525.76425pt x 329.73187pt>
 File: Imgs/Discriminador.png Graphic file (type png)
 <use Imgs/Discriminador.png>
 Package pdftex.def Info: Imgs/Discriminador.png  used on input line 115.
-(pdftex.def)             Requested size: 206.39685pt x 125.76006pt.
+(pdftex.def)             Requested size: 206.39685pt x 129.44016pt.
 <Imgs/u-net-architecture.png, id=88, 1560.83125pt x 1039.885pt>
 File: Imgs/u-net-architecture.png Graphic file (type png)
 <use Imgs/u-net-architecture.png>
@@ -454,94 +454,80 @@ l.198
 <Imgs/results.jpeg, id=125, 256.96pt x 1040.88875pt>
 File: Imgs/results.jpeg Graphic file (type jpg)
 <use Imgs/results.jpeg>
-Package pdftex.def Info: Imgs/results.jpeg  used on input line 269.
+Package pdftex.def Info: Imgs/results.jpeg  used on input line 270.
 (pdftex.def)             Requested size: 129.0pt x 522.5555pt.
-File: Imgs/results.jpeg Graphic file (type jpg)
-<use Imgs/results.jpeg>
-Package pdftex.def Info: Imgs/results.jpeg  used on input line 280.
-(pdftex.def)             Requested size: 129.0pt x 522.5555pt.
-<Imgs/PalmeraRGBSEM.png, id=129, 62.1522pt x 124.5453pt>
-File: Imgs/PalmeraRGBSEM.png Graphic file (type png)
-<use Imgs/PalmeraRGBSEM.png>
-Package pdftex.def Info: Imgs/PalmeraRGBSEM.png  used on input line 294.
-(pdftex.def)             Requested size: 129.0pt x 258.54637pt.
-<Imgs/SemaforoRGBSEM.png, id=130, 61.6704pt x 124.3044pt>
-File: Imgs/SemaforoRGBSEM.png Graphic file (type png)
-<use Imgs/SemaforoRGBSEM.png>
-Package pdftex.def Info: Imgs/SemaforoRGBSEM.png  used on input line 300.
-(pdftex.def)             Requested size: 129.0pt x 260.07388pt.
-
-
-LaTeX Warning: Reference `fig:resultados2' on page 3 undefined on input line 308.
-
-
-Underfull \vbox (badness 3068) has occurred while \output is active []
-
+<Imgs/results-2.png, id=127, 149.358pt x 545.8794pt>
+File: Imgs/results-2.png Graphic file (type png)
+<use Imgs/results-2.png>
+Package pdftex.def Info: Imgs/results-2.png  used on input line 281.
+(pdftex.def)             Requested size: 129.0pt x 471.51282pt.
  [3pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.318 
+l.295 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.318 
+l.295 
        <./Imgs/results.jpeg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+<Imgs/PalmeraRGBSEM.png, id=146, 62.1522pt x 124.5453pt>
+File: Imgs/PalmeraRGBSEM.png Graphic file (type png)
+<use Imgs/PalmeraRGBSEM.png>
+Package pdftex.def Info: Imgs/PalmeraRGBSEM.png  used on input line 298.
+(pdftex.def)             Requested size: 206.39685pt x 413.66888pt.
+<Imgs/SemaforoRGBSEM.png, id=147, 61.6704pt x 124.3044pt>
+File: Imgs/SemaforoRGBSEM.png Graphic file (type png)
+<use Imgs/SemaforoRGBSEM.png>
+Package pdftex.def Info: Imgs/SemaforoRGBSEM.png  used on input line 304.
+(pdftex.def)             Requested size: 206.39685pt x 416.11214pt.
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.323 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+l.334         \item G
+                     ran flexibilidad de simular situaciones externas o prop...pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.323 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.323 
-       <./Imgs/PalmeraRGBSEM.png> <./Imgs/SemaforoRGBSEM.png>] (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.bbl
+l.334         \item G
+                     ran flexibilidad de simular situaciones externas o prop... <./Imgs/results-2.png> <./Imgs/PalmeraRGBSEM.png>] (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 27--29
 []\OT1/ptm/m/n/8 ``Carla sen-sors re-fe-ren-ce,'' []$https : / / carla . readthedocs . io / en / latest / ref[]
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
- [5
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.363 \end{document}
+                     <./Imgs/SemaforoRGBSEM.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
  (/home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.aux
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 357.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
 Package rerunfilecheck Info: File `informe.out' has not changed.
 (rerunfilecheck)             Checksum: 60D2D75FB96F066506EE2C31F3A11BB2;1195.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 357.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
  ) 
 Here is how much of TeX's memory you used:
- 8505 strings out of 481226
- 130224 string characters out of 2913220
- 421894 words of memory out of 3000000
- 23864 multiletter control sequences out of 15000+200000
+ 8510 strings out of 481226
+ 130329 string characters out of 2913220
+ 419894 words of memory out of 3000000
+ 23868 multiletter control sequences out of 15000+200000
  574622 words of font info for 103 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,5n,37p,325b,392s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,5n,37p,325b,443s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/share/miktex-texmf/fonts/enc/dvips/base/8r.enc}</usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmb8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmbi8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmr8a.pfb></usr/local/share/miktex-texmf/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf (5 pages, 979852 bytes).
+Output written on /home/lautaro/Documents/Facultad/Vehiculos/Proyecto-Final/Informe/build/informe.pdf (5 pages, 1288691 bytes).
 PDF statistics:
  218 PDF objects out of 1000 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
