@@ -36,6 +36,11 @@
 ``U-net architecture,'' \url{https://en.wikipedia.org/wiki/U-Net}.
 
 
+\bibitem{Driving-to-safety}
+N.~Kalra and S.~M. Paddock, ``Driving to safety - how many miles of driving
+  would it take to demonstrate autonomous vehicle reliability?'' 2016.
+
+
 \bibitem{Pix2Pix}
 Phillip.I, J.Zhu, T.Zhou, and A.A.Efros, ``Image-to-image with conditional
   adversarial networks,'' 2018.
